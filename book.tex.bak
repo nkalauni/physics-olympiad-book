@@ -1,0 +1,46 @@
+\documentclass[a4paper, 12pt, twoside]{book}
+
+\input{settings/packages}
+
+\input{settings/page}
+
+\input{settings/macros}
+\newcommand{\imp}[1]{\underline{\textit{#1}}}
+
+\begin{document}
+
+\frontmatter
+\pagestyle{empty}
+\title{Olympiad Book}
+\author{
+   Nabin Kalauni\\
+   \and
+   Sandesh Parajuli\\
+   \and
+   Laxman Bista\\
+}
+\date{}
+\maketitle
+
+\input{frontmatter/title_page}
+
+\pagestyle{plain}
+\tableofcontents
+
+\mainmatter
+
+\input{mainmatter/ch1}
+\input{mainmatter/ch2}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

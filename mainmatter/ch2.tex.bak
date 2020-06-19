@@ -1,0 +1,103 @@
+\chapter{Newton's Laws}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[OC]{\leftmark}
+\fancyhead[EC]{\rightmark}
+%\renewcommand{\footrulewidth}{1pt}
+\cfoot{\thepage}
+
+\section{Key Concepts and Formulae}
+
+\section{Bridging Problem}
+When viewed from the side, the cone in fig. subtends an angle $2\theta$ at its tip. A block of mass $m$ is connected to the tip by a massless string and moves in a horizontal circle of radius $R$ around the surface. If the initial speed is $v_0$ and if the coefficient of kinetic friction between the block and the cone is $\mu$, how much time does it take the block to stop?\\
+\textsc{Solution:}\\
+First draw a free body diagram of the block indicating all forces, their directions and choice of axes. Assume the block is moving into the plane of figure. Frictional force always opposes motion and hence points out of the plane of the figure. ($\odot$ signifies out of the plane of figure and $\otimes$ into the plane.)\\
+Now we need to find the value of $f_r$ and for that we need the value of $N$ since $f_r=\mu N$. Before using Newton's Laws to find $N$, assess the values of $a_x$ and $a_y$.
+\begin{align*}
+a_y&=0 \qquad \because\text{no vertical motion}\\
+a_x&=\frac{v^2}{R} \qquad \because\text{circular motion}
+\end{align*}
+Using Newton's Laws,
+\begin{align}
+ \sum F_y&=ma_y \nonumber\\
+T\cos\theta + N\sin\theta - mg&=0 \label{eq31}\\
+\sum F_x &= ma_x \nonumber\\
+T\sin\theta - N\cos\theta &= \ddfrac{mv^2}{R}\label{eq32}
+\end{align}
+Eliminating $T$ from \eqref{eq31} and \eqref{eq32} and solving for $N$, we get,
+\begin{equation}
+N=mg\sin\theta - \ddfrac{mv^2\cos\theta}{R} \label{eq33}
+\end{equation}
+As discussed earlier, friction opposes the motion and causes the block to slow down over time. Mathematically,
+\begin{equation*}
+m\ddfrac{\diff v}{\diff t}=-\mu N
+\end{equation*}
+Using \eqref{eq33}, we get
+\begin{equation*}
+\ddfrac{\diff v}{gR\tan\theta - v^2}=-\ddfrac{\mu \cos \theta}{R}\diff t
+\end{equation*}
+If the total time taken by the block to stop is $\tau$. use the limits
+\begin{align*}
+v&=v_0 \quad \text{at} \quad t=0\\
+v&=0 \quad \text{at} \quad t=\tau
+\end{align*}
+\begin{align*}
+\int_{v_0}^0 \ddfrac{\diff v}{gR\tan \theta - v^2}&=-\int_0^\tau \frac{\mu \cos \theta}{R} \diff t\\
+-\frac{\mu\cos\theta}{R}\tau&= \frac{1}{2\sqrt{gR\tan\theta}}\biggl|\ln \frac{\sqrt{gR\tan\theta}+v}{\sqrt{gR\tan\theta}-v}\biggr|_{v_0}^0\\
+\therefore \tau&=\ddfrac{1}{2\mu}\sqrt{\ddfrac{R}{g\sin\theta\cos\theta}}\ln \Biggl( \ddfrac{\sqrt{gR\tan\theta}+v_0}{\sqrt{gR\tan\theta}-v_0}\Biggr)
+\end{align*}
+\textsc{Evaluation:}
+\begin{enumerate}
+\item Check dimensions of final answer.
+\item For an answer as messy as this, you must check limits. First thing you will notice is that $t=\infty$ for $v_0=\sqrt{gR\tan\theta}$. This is to be expected because this is the speed of a body moving in a horizontal circle without contact with any surface. So, if $v_0=\sqrt{gR\tan\theta}$, the normal force $N=0$ and hence $f_r=0$. So, the block will swing indefinitely. 
+\item For the limit $\theta \to \ddfrac{\pi}{2}$, $\ddfrac{v_0}{\sqrt{gR\tan\theta}} \ll 1$. So we can use the Taylor series approximation of $\ln(1+x)$ for $x \ll 1$.
+\begin{equation}
+\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\dots \label{eq34}
+\end{equation}
+For $x\ll 1$, $ln(1+x) \approx x$.
+\begin{align*}
+\therefore \tau_{ (\theta \to \frac{\pi}{2})}&= \frac{1}{2\mu} \sqrt{\frac{R}{g\sin\theta\cos\theta}}\Biggl( \frac{v_0}{\sqrt{gR\tan\theta}}-\biggl( - \frac{v_0}{\sqrt{gR\tan\theta}} \biggr) \Biggr)\\
+&= \frac{v_0}{\mu g}
+\end{align*}
+This is a sensible result as deceleration due to friction on level ground is $\mu g$.
+\end{enumerate}
+
+\section{Level 1 Problems and Solutions}
+
+\begin{enumerate}
+
+\item Body A in figure weighs 102 N and body B weighs 32 N. the coefficients of friction between A and the incline are $\mu_s=0.56$ and $\mu_k=0.25$. Angle $\theta$ is 40\degree. Sketch the free body diagrams and find the accelerations of A (use $g=10\si{ms^{-2}}$) if it is initially 
+\begin{enumerate}
+\item at rest.
+\item moving up the incline.
+\item moving down the incline. \hfill \textit{NePhO 2016}
+\end{enumerate}
+\textsc{Solution:}
+\begin{enumerate}
+\item Since $w_A \sin \theta > w_B$, A tends to slide down and hence static friction opposes the descent. Also, the acceleration of A and B are equal since the length of rope has to remain constant.
+From the FBDs and using Newton's laws, we arrive at the following system of equations
+\begin{align*}
+T-w_B &= m_B a\\
+N&= w_A\cos\theta\\
+w_A\sin\theta - T - \mu_S N &= m_A a
+\end{align*}
+On solving these equations for $a$, we get
+\begin{equation*}
+a=\frac{w_A(\sin\theta - \mu_S \cos\theta)-w_B}{m_A+m_B}
+\end{equation*}
+replace the numerical values to get
+\[
+a=
+\]
+
+\end{enumerate}
+
+
+\end{enumerate}
+
+\section{Level 2 Problems and Solutions}
+
+\section{IPhO Problems}
+
+\section{Supplementary Problems}
