@@ -1,11 +1,17 @@
 %% packages
-
+%\usepackage[inner = 1.5in, outer = 1in, top= 1in, buttom=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox} %needed to create colored boxes
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{ragged2e}
+\usepackage{wrapfig}
+\usepackage{svg}
 \usepackage{blindtext} % needed for creating dummy text passages
+\usepackage[export]{adjustbox} %adjust figures
 %\usepackage{ngerman} % needed for German default language
 \usepackage{amsmath} % needed for command eqref
-\newcommand*\diff{\mathop{}\!\mathrm{d}} % creates a different type of d for differentials to separate it from variable d
-\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}} % different d for higher order differentials
-\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}} % for displaystyle fractions in case of large fractions
 \usepackage{amssymb} % needed for math fonts
 \usepackage{gensymb} % for degree symb
 \usepackage[
@@ -31,9 +37,6 @@
 \usepackage{bigstrut} % needed for the command \bigstrut
 \usepackage{enumerate} % needed for some options in enumerate
 \usepackage{enumitem} % to use notes
-\newlist{notes}{enumerate}{1} % to create list inside note
-\setlist[notes]{label=Note: ,leftmargin=*} % defining the label and margin of notes
-\newenvironment{note}[1]{\begin{notes}\item #1}{\end{notes}} % to write one note
 \usepackage{todonotes} % needed for todos
 \usepackage{makeidx} % needed for creating an index
 \usepackage{siunitx} % to write units

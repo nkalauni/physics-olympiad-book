@@ -30,3 +30,15 @@
 \newcommand{\bbX}{\mathbb{X}}
 \newcommand{\bbY}{\mathbb{Y}}
 \newcommand{\bbZ}{\mathbb{Z}}
+
+% creates a different type of d for differentials to separate it from variable d
+\newcommand*\diff{\mathop{}\!\mathrm{d}} 
+% different d for higher order differentials
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}} 
+% for displaystyle fractions in case of large fractions
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}} 
+
+%Note environment
+\newlist{notes}{enumerate}{1} % to create list inside note
+\setlist[notes]{label=Note: ,leftmargin=*} % defining the label and margin of notes
+\newenvironment{note}[1]{\begin{notes}\item #1}{\end{notes}} % to write one note

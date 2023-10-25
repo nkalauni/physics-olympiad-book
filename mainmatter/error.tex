@@ -1,0 +1,118 @@
+\chapter{Error Analysis}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[OC]{\leftmark}
+\fancyhead[EC]{\rightmark}
+%\renewcommand{\footrulewidth}{1pt}
+\cfoot{\thepage}
+
+\section{Key Concepts and Formulae}
+\begin{enumerate}
+    \item Measurement is a fundamental part of doing physics. No measurement is absolutely accurate. Every measurement is subject to some uncertainty and there is a systematic way of dealing with such uncertainties which we call error analysis. 
+    \item \textbf{Types of error:}
+    \begin{enumerate}
+        \item Systematic error: Systematic errors come from the bias in the measuring device or the measuring technique. This can be largely fixed by calibrating the device properly and designing the experiment carefully. 
+        \item Random/statistical error: Random error comes from unidentified sources during the experiment. It causes small fluctuations in the value of the measured quantity. Random errors can be eliminated or dealt with statistical analysis.  
+    \end{enumerate}
+    \item \textbf{Determining Random Errors:}
+    \begin{enumerate}
+        \item Least Count (L.C.): It is the smallest value that can be measured by the measuring device. Measured values are resolved properly only up to this value. For instance, the least count of the ruler we use is 1 mm. In a direct measurement, the uncertainty associated with the LC can be any fraction of the LC. In general, it is 1/2 of L.C. [\textbf{Note:} When an instrument directly measures the quantity of interest it is called direct measurement].   
+        \item Standard Deviation($\sigma$): To find the uncertainty using standard deviation, we repeat the measurement several times and obtain a table of measured quantity. We then find the average/mean($\Bar{x}$) and then the standard deviation$\sigma$, where $\sigma$ is:
+        \begin{align*}
+            \sigma &= \sqrt{\dfrac{\Sigma_{i = 1}^N (\Bar{x} - x_i)^2}{N-1}}
+        \end{align*}
+        and, the error estimation is: 
+        \begin{align*}
+            \delta\Bar{x} &= \dfrac{\sigma}{\sqrt{N}}
+        \end{align*}
+        The final value would be something like: $\Bar{x}$ $\pm$ $\delta \Bar{x}$. 
+    \end{enumerate}
+    \item \textbf{Error Propagation:}\\
+    There are many physical quantities that we can not measure directly. For such quantities, we measure the parameters on which that quantity is dependent on. For instance, we can measure velocity indirectly by directly measuring distance and time. For direct measurement, we can calculate the errors by methods explained in (3), but how do we calculate errors for indirectly measured quantities? In this situation, we apply what is known as "Error Propagation".  
+    \item \textbf{Absolute error} is represented as $\Delta$x. \textbf{Relative or fractional error} is represented as $\dfrac{\Delta x}{x}$, and \textbf{percentage error} is represented by multiplying the relative error by 100 \%. 
+    
+    \item \textbf{Basic Rules of Error Propagation:}If $\Delta$x is the uncertainty in x and $\Delta$y is the uncertainty in z, then the following rules apply for z(x, y).  
+    \begin{enumerate}
+        \item \textbf{Addition and subtraction:}If z = x + y, $\Delta$z = $\Delta$x + $\Delta$y. Similarly, if z = x - y, $\Delta$z = $\Delta$x + $\Delta$y. Errors always add! Therefore, it is a good idea to take the absolute values of the uncertainties. i.e., $\Delta$z = $|\Delta x|$ + $|\Delta y|$ 
+        
+        \item \textbf{Multiplication:}For z = xy or z = x/y we can find the uncertainty in z as follows: \\
+        i) z + $\Delta$z = (x + $\Delta$x)(y + $\Delta$y) = xy + x $\Delta$y + y $\Delta$x + $\Delta$x $\Delta$y. Here $\Delta$x $<<$ x and $\Delta$y $<<$y, hence the last term $\Delta$x $\Delta$y being very small can be ignored. Therefore, 
+        \begin{align*}
+            z + \Delta z &= xy + y\Delta x + x\Delta y \\
+            \dfrac{\Delta z}{z} &= \dfrac{\Delta x}{x} + \dfrac{\Delta y}{y}
+        \end{align*}
+        The same rule also applies for division. \\\\
+        ii) Another way to calculate uncertainties is by taking natural log on both sides of the expression and then differentiating it.
+        \begin{align*}
+        \text{ln(z)} &= \text{ln(xy)}\\
+        \dfrac{\Delta z}{z} &= \dfrac{\Delta x}{x} + \dfrac{\Delta y}{y}
+        \end{align*}
+        Note: d ln(f) = $\dfrac{df}{f}$
+    \end{enumerate}
+    \item \textbf{Product of Powers:}For z = x$^m$y$^n$, 
+    \begin{align*}
+        ln(z) &= ln(x^m y^n)\\
+        \dfrac{\Delta z}{z} &= m ln(x) + n ln(y)\\
+        \dfrac{\Delta z}{z} &= |m|\dfrac{\Delta x}{x} + |n|\dfrac{\Delta y}{y}
+    \end{align*}
+    
+    \item \textbf{Mixed function:} For instance, there might be functions such as Z = a + b$c^3$. In that case, just apply the combination of above rules.  
+    \begin{align*}
+        \dfrac{\Delta z}{z} &= \Delta a + \dfrac{\Delta b}{b} + 3\dfrac{\Delta c}{c}
+    \end{align*}
+    
+    \item \textbf{Uncertainty through derivatives:}Derivatives is another simple way of finding uncertainty of a complex expression. Below are few examples. \\
+    i)  \begin{align*}
+         z &= \sqrt{x^2 + y^2}\\
+         z &= (x^2 + y^2)^{1/2}\\
+         dz &= \dfrac{1}{2}(x^2 + y^2)^{-1/2}(2xdx + 2ydy)\\
+         \Delta z &= \dfrac{x\Delta x + y\Delta y}{\sqrt{x^2 + y^2}}
+       \end{align*}
+       
+    ii) 
+    \begin{align*}
+        z &= e^x\\
+        dz &= e^x dx \\
+        \Delta z &= e^x \Delta x 
+    \end{align*}
+    
+    iii) 
+    \begin{align*}
+        z &= \text{sin}\theta\\
+        dz &= \text{cos}\theta d\theta\\
+        \Delta z &= \text{cos}\theta \Delta \theta
+    \end{align*}
+    However, ensure that the angle is in radian. 
+\end{enumerate}
+\section{Bridging Problems}
+\begin{enumerate}
+    \item A pendulum consists of a copper sphere of radius r and density $\rho$ suspended from a string. The motion of the sphere experiences a viscous drag from the air such that the amplitude of oscillation A decays with time as follows:\\
+    \[A = A_oe^{-\alpha t}\]\hspace{1 cm}where, \[\alpha = \frac{9\eta}{4\rho r^2}\]
+    
+    A$_o$ is the amplitude at time t = 0 and $\eta$ is the viscosity of the air. The measurement of the amplitude is accurate to 1\%, other measurement are recorded below: 
+    
+    \begin{align*}
+        \eta &= (1.78 \pm 0.02) \times 10^{-5} \text{kg} m^{-1} s^{-1}, \\
+        r &= (5.2 \pm 0.1) \text{mm,}\\ 
+        \rho &= (8.92 \pm 0.05) \times 10^3 kg m^{-3} 
+    \end{align*}
+    \begin{enumerate}
+        \item 	Calculate the percentage error in each of the following: i) $\eta$; ii) $\rho$; iii) r$^2$; iv) $\frac{A_o}{A}$.
+        
+        \item 	Estimate the time t taken for the amplitude to fall to 85\% of A$_o$. Also calculate the percentage error in ln$\left(Ao/A\right)$ and t. 
+        
+        \item Which experimental parameter contributes the largest error to the final result?
+    \end{enumerate}
+\end{enumerate}   
+\section{Level 1 Problems and Solutions}
+\begin{enumerate}
+    \item In Searle’s apparatus to find Young’s modulus, the diameter of a wire is measured as D = 0.050 cm, length of wire is L = 125 cm, and when a weight m = 20.0 kg is put, extension in wire was found to be 0.100 cm. Find maximum permissible error in Young’s modulus (Y). \\
+    Use \[Y = \frac{mgl}{\frac{\pi}{4}d^2x}\]\\
+    \item The following observations were taken for determining surface tension T of water by capillary method. \\
+    Diameter of capillary(D) = 1.25 $\times 10^{-2}$ m\\
+    Rise of water, h = 1.45 $\times\ 10^{-2}$ m\\
+    Using g = 9.80 m/s$^2$ and the simplified relation T = $\frac{rgh }{2}\times 10^3$ N/m \\
+    Find the possible error in surface tension.  
+    \item 
+\end{enumerate}

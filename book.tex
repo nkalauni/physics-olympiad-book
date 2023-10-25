@@ -8,16 +8,16 @@
 \newcommand{\imp}[1]{\underline{\textit{#1}}}
 
 \begin{document}
-
+% \input{frontmatter/frontpage}
 \frontmatter
 \pagestyle{empty}
-\title{Olympiad Book}
+\title{\textbf{A Guide to Nepal Physics Olympiad}}
 \author{
+   Laxman Bista\
+   \and
    Nabin Kalauni\\
    \and
    Sandesh Parajuli\\
-   \and
-   Laxman Bista\\
 }
 \date{}
 \maketitle
@@ -25,12 +25,22 @@
 \input{frontmatter/title_page}
 
 \pagestyle{plain}
+\chapter*{Preface}
+\input{frontmatter/Preface}\clearpage
+\chapter{Useful Techniques for Solving Problems}
+\input{frontmatter/techniques}\clearpage
 \tableofcontents
-
 \mainmatter
-
-\input{mainmatter/ch1}
+\input{mainmatter/Kinematics}
 \input{mainmatter/ch2}
+\input{mainmatter/Gravitation}
+\input{mainmatter/thermo}
+\input{mainmatter/elecmag}
+\input{mainmatter/modern}
+\input{mainmatter/error}
+\input{mainmatter/graph}
+% \input{mainmatter/Waves and Optics}
+
 
 
 
