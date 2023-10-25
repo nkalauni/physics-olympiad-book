@@ -1,5 +1,5 @@
 
-# A Guide to Nepal Physics Olympiad and Beyond
+# A Guide to Nepal Physics Olympiad
 
 ## About the book
 
@@ -26,6 +26,8 @@ This book has been written in [LaTeX](https://www.latex-project.org/) and publis
 - Create a pull request with adequate description of changes.
 
 For interested contributors who are not familiar with these terms, the QGIS-documentation repo explains these steps in detail for people making their [first contribution](https://github.com/gitty-coder/QGIS-Documentation/blob/master/docs/documentation_guidelines/first_contribution.rst).
+
+---
 
 Shield: [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
