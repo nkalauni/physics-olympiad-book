@@ -11,7 +11,7 @@ Since 2007 when Nepal first participated in IPhO, we have bagged 3 bronze medals
 
 ## About the authors
 
-The authors - Laxman Bist, Nabin Kalauni and Sandesh Parajuli - finished in the top 3 of NePhO 2018 and represented Nepal in the International Physics Olympiad [(IPhO) 2018, Lisbon](http://web.archive.org/web/20230528142145/https://ipho2018.pt/content/delegations/nepal). Laxman Bist completed his B.S. in Physics with a minor in Neuroscience from Dartmouth College and is currently a recent trainee at the Albert Einstein College of Medicine. Nabin Kalauni completed his B.E. in Civil Engineering from IOE Pulchowk Campus and is currently working as a research assistant at Center for Water Resource Studies, IOE. Sandesh Parajuli completed his B.E. in Aerospace Engineering from IOE Pulchowk Campus.
+The authors - Laxman Bist, Nabin Kalauni and Sandesh Parajuli - finished in the top 3 of NePhO 2018 and represented Nepal in the International Physics Olympiad [(IPhO) 2018, Lisbon](http://web.archive.org/web/20230528142145/https://ipho2018.pt/content/delegations/nepal). Laxman Bist completed his B.S. in Physics with a minor in Neuroscience from Dartmouth College and is currently a research trainee at the Albert Einstein College of Medicine. Nabin Kalauni completed his B.E. in Civil Engineering from IOE Pulchowk Campus and is currently working as a research assistant at Center for Water Resource Studies, IOE. Sandesh Parajuli completed his B.E. in Aerospace Engineering from IOE Pulchowk Campus.
 
 ## Call for contribution
 
