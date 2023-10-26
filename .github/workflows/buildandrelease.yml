@@ -5,7 +5,7 @@ name: Build Latex and Release PDF
 on:
   push:
     tags:
-      - '*.*.*'
+      - 'v*.*.*'
     
 jobs:
   build_latex:
