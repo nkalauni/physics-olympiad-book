@@ -52,6 +52,34 @@ s=\int_{t_1}^{t_2}v_{(t)}\diff t
 \end{align}
 The direction of $\theta$ is assumed to be perpendicular to the plane of rotation and its sense is taken according to the right hand screw rule.
 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c  c}
+        \begin{minipage}{.48\textwidth}
+            \includesvg[width=\linewidth]{figures/kinem/one.svg}
+        \end{minipage}
+        &
+        \begin{minipage}{.48\textwidth}
+            \includesvg[width=\linewidth]{figures/kinem/two.svg}
+        \end{minipage} \\
+        \begin{minipage}{.48\textwidth}
+            \begin{itemize}
+                \item $\bm{\theta}$ points outward from the plane of the circle.
+                \item $\bm{\omega}$ points outward from the plane of the circle.
+                \item $\bm{\alpha}$ points inward into the plane of the circle.
+            \end{itemize}
+        \end{minipage}
+        &
+        \begin{minipage}{.48\textwidth}
+            \begin{itemize}
+                \item $\bm{\theta}$ points outward from the plane of the circle.
+                \item $\bm{\omega}$ points inward into the plane of the circle.
+                \item $\bm{\alpha}$ points inward into the plane of the circle.
+            \end{itemize}
+        \end{minipage}
+    \end{tabular}
+\end{table}
+
 \item Linear and rotational quantities are related in the following ways
 \begin{align}
 \mathbf{v} &= \bm{\omega}\times\mathbf{r} \label{eq12}\\
@@ -78,6 +106,10 @@ Although these expressions can easily be obtained from \eqref{eq3}, \eqref{eq4} 
 
 \section{Bridging Problem}
 
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \includesvg[width = \linewidth]{figures/kinem/three.svg}
+\end{wrapfigure}
+
 You fire a ball with an initial speed $v_0$ at and angle $\phi$ above the surface of an incline which is itself inclined at an angle $\theta$ above horizontal.
 
 \begin{enumerate}[label=\alph*)]
@@ -91,12 +123,16 @@ First choose the co-ordinate axes. You could choose x-axis along the incline or 
 
 Our first task is to determine the acceleration along the x and y directions and check whether they are constant.
 
+\begin{wrapfigure}{l}{0.3\textwidth}
+    \includesvg[width = \linewidth]{figures/kinem/four.svg}
+\end{wrapfigure}
+
 On resolution, we get
 \begin{align*}
 a_x &= -g\sin\theta \\
 a_y &= -g\cos\theta
 \end{align*}
-both of which are constant. hence, we may use the constant-acceleration formulae.
+both of which are constant. Hence, we may use the constant-acceleration formulae.
 
 Before starting with the solution, it is often convenient to take stock of initial parameters.
 \begin{equation*}
@@ -193,6 +229,7 @@ Replace the value of $t_2$ to get
 Check dimensions of all answers.
 
 \item  A point moves along a circle with a velocity $v=at$, where $a=0.50$ \si{m.s^{-1}}. Find the total acceleration of the point at the moment when it covers the $n^{th}$ $(n=0.10)$ fraction of the circle after the beginning of motion. \hfill \textsl{Irodov 1.37}\\
+
 \textsc{Solution:}\\
  Assume circle of radius $R$ and location of point is $\theta=0$ at $t=0$. 
 \begin{align*}
@@ -230,10 +267,25 @@ $\mathbf{v}_{W/G}$ = velocity of wind w.r.t. ground\\
 $\mathbf{v}_{P/G}$ = velocity of plane w.r.t. ground\\
 $\mathbf{v}_{P/W}$ = velocity of plane w.r.t. wind (or velocity in still air)\\
 The vector diagram of the situation described above is shown below\\
-\begin{equation*}
-\mathbf{v}_{P/W}=\mathbf{v}_{P/G}+(-\mathbf{v}_{W/G})
-\end{equation*}
-So the direction of $\mathbf{v}_{P/W}$ or the direction pilot should head for is\\
+
+\begin{figure}[hbt]
+    \centering
+    \includesvg{figures/kinem/five.svg}
+\end{figure}
+
+Relative velocities can be written in vectorical form as shown below.
+\begin{align*}
+    \mathbf{v}_{P/W}&=\mathbf{v}_{P/G}+\mathbf{v}_{G/W}\\
+    \mathbf{v}_{P/W}&=\mathbf{v}_{P/G}+(-\mathbf{v}_{W/G})
+\end{align*}
+
+So the direction of $\mathbf{v}_{P/W}$ or the direction pilot should head for is shown in the vector diagram below\\
+
+\begin{figure}[hbt]
+    \centering
+    \includesvg{figures/kinem/six.svg}
+\end{figure}
+
 Using Pythagorean theorem in the right triangle
 \begin{align*}
 {v_{P/W}}^2&={v_{P/G}}^2+{v_{W/G}}^2\\
@@ -265,6 +317,13 @@ R&=\ddfrac{\left(1+\left(\frac{\diff y}{\diff x}\right)^{\!2}\right)^{\!\frac{3}
 \text{Finally}, \quad a_{tot}&=a_n=2av^2
 \end{align*}
 Check dimensions of the final answer.
+
+%\item What work should a man do to walk up a subway escalator moving down? The height of the escalator is 'H', its speed is constant and equal to 'V', and it is inclined at an angle $\alpha$ . 
+%
+%\textsc{Solution:}\\
+%Hint: Work done = F d. \end{align*} 
+%what is the total distance covered by man?[keep in mind that the escalator is also moving]
+%Ans: W = mgsin\alpha(\frac{h}{sin\alpha} + Vt)
 
 \end{enumerate}
 
@@ -324,11 +383,17 @@ On solving this equation, we get $\theta_0$ for which length of trajectory is ma
 
 \textsc{Solution:}\\
 Consider unit vectors $\mathbf{i}$ in the direction of axis AB, $\mathbf{k}$ perpendicular to AB in the plane of rotation and $\mathbf{j}$ perpendicular to the plane of rotation of AB as shown.
+
+\begin{figure}[hbt]
+    \centering
+    \includesvg{figures/kinem/seven.svg}
+\end{figure}
+
 \begin{align*}
 \bm{\omega_P} &= \omega_0\mathbf{i} + \beta_0t\mathbf{j}\\
 |\bm{\omega_P}|&= \sqrt{{\omega_0}^2+{\beta_0t}^2}
 \end{align*}
-For $\mathbf{\alpha_P}$,
+For $\bm{\alpha_P}$,
 \begin{align*}
 \bm{\alpha_P}&=\ddfrac{\diff \bm{\omega_P}}{\diff t}=\frac{\diff}{\diff t}(\omega_0\mathbf{i} + \beta_0t\mathbf{j})
 \end{align*}
@@ -343,9 +408,13 @@ Plug $\omega_0=0.50$ rad/s, $\beta_0=0.10$ \si{rad/s^2} and $t=3.50$ s.
 \begin{align*}
 \omega_P=0.61 \si{ rad/s} \quad \text{and} \quad \alpha_P=0.20 \si{ rad/s^2}
 \end{align*}
-\begin{note}
-The direction of $\frac{\diff \bm{i}}{\diff t}$ is $\bm{k}$ for the same reason that direction of centripetal acceleration is perpendicular to velocity in uniform circular motion. Consider the figure where $\bm{i_1}$ is the initial direction of axis AB and $\bm{i_2}$ is the direction after time $\Delta t$. The direction of $\Delta \bm{i}$ is as shown. In the limit of $\Delta t \to 0$, $\bm{i_2} \to \bm{i_1}$ and hence the direction of $\diff \bm{i}$ is perpendicular to $\bm{i}$ and along $\bm{k}$.
-\end{note}
+
+\begin{minipage}{0.6\textwidth}
+    The direction of $\frac{\diff \bm{i}}{\diff t}$ is $\bm{k}$ for the same reason that direction of centripetal acceleration is perpendicular to velocity in uniform circular motion. Consider the figure where $\bm{i_1}$ is the initial direction of axis AB and $\bm{i_2}$ is the direction after time $\Delta t$. The direction of $\Delta \bm{i}$ is as shown. In the limit of $\Delta t \to 0$, $\bm{i_2} \to \bm{i_1}$ and hence the direction of $\diff \bm{i}$ is perpendicular to $\bm{i}$ and along $\bm{k}$.
+\end{minipage} \hspace{0.05\textwidth}
+\begin{minipage}{0.25\textwidth}
+    \includesvg[width = \linewidth]{figures/kinem/eight.svg}
+\end{minipage}
 
 \end{enumerate}
 
@@ -367,20 +436,33 @@ to hit the topmost point of a spherical building of radius $R$? \hfill \textsl{I
 \end{enumerate}
 
 \textsc{Solution:}
+
 \begin{enumerate} [label=\roman*]
-\item The maximum heght $z_0$ is achieved when the ball is thrown vertically upwards.
+\begin{minipage}{0.6\textwidth}
+    \item The maximum heght $z_0$ is achieved when the ball is thrown vertically upwards.
 \begin{equation} \label{eq27}
 z_0=\ddfrac{{v_0}^2}{2g}
 \end{equation}
 The maximum horizontal distance is achieved when the ball is thrown at an angle of 45\degree and the distance covered in that case is $\ddfrac{{v_0}^2}{g}$. But using \eqref{eq26}, the maximum horizontal distance achievable is $\sqrt{\ddfrac{z_0}{k}}$.
+\end{minipage}
+\begin{minipage}{0.3\textwidth}
+    \includesvg[width=\linewidth]{figures/kinem/nine.svg}
+\end{minipage}
+
 \begin{align}
 \sqrt{\ddfrac{z_0}{k}}&=\ddfrac{{v_0}^2}{g} \nonumber\\
 k&= \frac{g}{2{v_0}^2} \label{eq28}
 \end{align}
 \item In kinematics, it is sometimes easier to analyze a process by reversing it. In this case, we can ask ourselves: What is the trajectory of the ball thrown from the roof of the building with minimum initial speed such that it does not hit the building on its way down?\\
-With purely qualitative reasoning, we arrive at the conclusion that the ball must touch the building on its way down. For example, say a ball is thrown at an angle from the roof and its trajectory does not touch the building. Then we can argue that the ball can be thrown at the same angle by lowering its speed continually until the trajectory just touches the roof at some point. The speed can't be lowered any further as the ball would then hit the roof.\\
-Now asume the ball is thrown horizontally from the roof. We can increase the throwing angle slightly upward while keeping the same speed. This trajectory would not touch the building at any point. Now we can use the same argument to conclude that the speed can still be lowered until the trajectory touches the building.\\
-So the optimal trajectory must touch the building at some point as shown.
+With purely qualitative reasoning, we arrive at the conclusion that the ball must touch the building on its way down. For example, say a ball is thrown at an angle from the roof and its trajectory does not touch the building. Then we can argue that the ball can be thrown at the same angle by lowering its speed continually until the trajectory just touches the roof at some point. The speed can't be lowered any further as the ball would then hit the roof.
+
+\begin{minipage}{0.6\textwidth}
+    Now assume the ball is thrown horizontally from the roof. We can increase the throwing angle slightly upward while keeping the same speed. This trajectory would not touch the building at any point. Now we can use the same argument to conclude that the speed can still be lowered until the trajectory touches the building.\\
+    So the optimal trajectory must touch the building at some point as shown.
+\end{minipage}
+\begin{minipage}{0.3\textwidth}
+    \includesvg[width=\linewidth]{figures/kinem/ten.svg}
+\end{minipage}
 
 \item Before getting into the solution, it is essential to distinguish between targetable region and trajectory. Trajectory is the actual path the ball travels through when thrown from a point with a particular speed and at a particular angle. Targetable region, on the other hand, includes all possible trajectories the ball can trace when thrown from a point with a particular speed at different angles. We established in the solution to ii) that the optimal trajectory must touch the building. By similar analysis, we can also show that boundary of targetable region for minimum speed must also touch the building. If it were to not touch the building, it would be possible to throw the ball along any one trajectory that does not touch the building. Again it would be possible to further lower the speed hence we can conclude that the initial speed could not have been the minimum speed. So, the boundary of targetable region for minimum speed must touch the building. The equation of this boundary when a ball is thrown from origin with a speed $v_0$ is given below, using \eqref{eq26}, \eqref{eq27} and \eqref{eq28}:
 \begin{equation*}
@@ -434,6 +516,41 @@ v_{min}&=\sqrt{{v_0}^2+2g(2R)}\nonumber\\
 
 \item A cylinder rolls without slipping over a horizontal plane The radius of the cylinder is equal to $r$. Find the curvature radii of trajectories traced out by points A and B (see fig.). \hfill \textsl{Irodov 1.54}
 
-\item \dots
+\item A car slides without friction down a ramp described by a height function h(x)
+which is smooth and monotonically decreasing as x increases from 0
+to L. The ramp is followed by a loop of radius R. Gravitational acceleration 
+is a constant g in the negative direction.\\ 
+\begin{figure}[htp]
+    \centering
+    \includegraphics{figures/kinem/kinem2.PNG}
+    \label{fig:my_label}
+\end{figure}\\
+If the velocity is zero when x = 0, what is the minimum height h$_0$ = h(0)
+such that the car goes around the loop, never leaving the track?
+\hfill \textsl{(Stony Brook)}\\
+\big[\textbf{Ans: }h$_0$ = $\dfrac{5}{2}$R\big]
+\item A spacecraft in flight explodes into three equal portions. A portion continues along the original line of 
+flight. The other two shoot out in directions forming an angle of 60 ° with the original path. The energy 
+released in the explosion is twice larger than the kinetic energy possessed by the probe precisely at the time of the 
+explosion. Determine the kinetic energy of each fragment immediately after the explosion. \\\hfill \textsl{(CoPhO)}
+
+\item A mass is attached to the end of a string. The mass moves on a frictionless table, and the string passes through a hole in the table (see Figure
+P.1.9), under which someone is pulling on the string to make it taut at all
+times. Initially, the mass moves in a circle, with kinetic energy The
+string is then slowly pulled, until the radius of the circle is halved. How much work was done?\hfill \textsl{(MIT)}
+\begin{figure}[htp]
+    \centering
+    \includegraphics{figures/kinem/kinem3.PNG}
+    \label{fig:my_label}
+\end{figure}
+\textbf{Ans:}$\dfrac{3m^2v^2R^2}{2mR^2} = 3E_0$
+\item A cylinder of mass M and radius R is placed on an inclined plane with angle of inclination $\theta$. The 
+inclined plane has acceleration $a_o$ with respect to an inertial frame as shown in the figure.
+
+\item A wheel with radius R is situated at height R from
+the ground and is rotating at angular velocity $\Omega$. At some point A, a drop of water separates from the wheel and reaches the ground at point B situated directly below the wheel’s axle (see the figure). Find the falling time of the drop and the location of point A (i.e. angle $\alpha$).
 
 \end{enumerate}
+
+
+

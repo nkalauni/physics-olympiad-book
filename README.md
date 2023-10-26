@@ -5,7 +5,7 @@
 
 A Guide to Nepal Physics Olympiad is a physics problem-solving guide for Nepali high school students, with special focus on Physics Olympiads. This is not to say that the book cannot be used for other purposes or by students of other nationalities. However, the main purpose of this book is to systematically guide Nepali high school students and prepare them for the Nepal Physics Olympiad (NePhO). The content of this book and the types of problems are organized as per the syllabus of NePhO.
 
-## Motive of the book
+## Purpose of the book
 
 Since 2007 when Nepal first participated in IPhO, we have bagged 3 bronze medals and 7 honorable mentions. It has long been our belief that a lack of preparatory materials and resources have led Nepali students to underachieve in IPhOs. We hope that this book will be a small step towards addressing this issue.
 
@@ -26,6 +26,12 @@ This book has been written in [LaTeX](https://www.latex-project.org/) and publis
 - Create a pull request with adequate description of changes.
 
 For interested contributors who are not familiar with these terms, the QGIS-documentation repo explains these steps in detail for people making their [first contribution](https://github.com/gitty-coder/QGIS-Documentation/blob/master/docs/documentation_guidelines/first_contribution.rst).
+
+## Build instructions
+
+Since the source code uses the [svg](https://ctan.org/pkg/svg?lang=en) package, which in turn uses the inkscape CLI, all latex engines must be run with the `--shell-escape` argument. Our suggestion would be to use [latexmk](https://github.com/mgeier/homepage/blob/0fc88d83/latexmk.rst) to build the source file `book.tex`.
+
+	latexmk --shell-escape book.tex
 
 ---
 

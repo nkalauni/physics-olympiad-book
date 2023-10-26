@@ -5,15 +5,16 @@
 \input{settings/page}
 
 \input{settings/macros}
-\newcommand{\imp}[1]{\underline{\textit{#1}}}
 
 \begin{document}
-% \input{frontmatter/frontpage}
+
 \frontmatter
+
+\includepdf[fitpaper=true]{frontmatter/cover.pdf}
 \pagestyle{empty}
 \title{\textbf{A Guide to Nepal Physics Olympiad}}
 \author{
-   Laxman Bista\
+   Laxman Bist\
    \and
    Nabin Kalauni\\
    \and
@@ -24,22 +25,24 @@
 
 \input{frontmatter/title_page}
 
-\pagestyle{plain}
+% \pagestyle{plain}
 \chapter*{Preface}
-\input{frontmatter/Preface}\clearpage
-\chapter{Useful Techniques for Solving Problems}
-\input{frontmatter/techniques}\clearpage
+\pagestyle{plain}
+\input{frontmatter/preface}
+\chapter*{Useful Techniques for Solving Problems}
+\input{frontmatter/techniques}
 \tableofcontents
+
 \mainmatter
-\input{mainmatter/Kinematics}
-\input{mainmatter/ch2}
-\input{mainmatter/Gravitation}
+
+\input{mainmatter/kinematics}
+\input{mainmatter/newton_laws}
+% \input{mainmatter/gravitation}
 \input{mainmatter/thermo}
 \input{mainmatter/elecmag}
 \input{mainmatter/modern}
 \input{mainmatter/error}
 \input{mainmatter/graph}
-% \input{mainmatter/Waves and Optics}
 
 
 
@@ -54,3 +57,7 @@
 
 
 \end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

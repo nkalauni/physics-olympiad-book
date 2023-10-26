@@ -42,3 +42,9 @@
 \newlist{notes}{enumerate}{1} % to create list inside note
 \setlist[notes]{label=Note: ,leftmargin=*} % defining the label and margin of notes
 \newenvironment{note}[1]{\begin{notes}\item #1}{\end{notes}} % to write one note
+
+% Month year date
+\newdateformat{monthyeardate}{\monthname[\THEMONTH], \THEYEAR}
+
+% Important text style
+\newcommand{\imp}[1]{\underline{\textit{#1}}}
