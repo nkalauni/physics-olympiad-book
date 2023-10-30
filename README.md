@@ -1,6 +1,8 @@
 
 # A Guide to Nepal Physics Olympiad
 
+Release coming soon!
+
 ## About the book
 
 A Guide to Nepal Physics Olympiad is a physics problem-solving guide for Nepali high school students, with special focus on Physics Olympiads. This is not to say that the book cannot be used for other purposes or by students of other nationalities. However, the main purpose of this book is to systematically guide Nepali high school students and prepare them for the Nepal Physics Olympiad (NePhO). The content of this book and the types of problems are organized as per the syllabus of NePhO.
