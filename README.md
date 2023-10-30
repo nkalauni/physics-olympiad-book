@@ -1,7 +1,7 @@
 
 # A Guide to Nepal Physics Olympiad
 
-Release coming soon!
+Release coming soon! For now, [build](#build) the source files.
 
 ## About the book
 
@@ -29,7 +29,7 @@ This book has been written in [LaTeX](https://www.latex-project.org/) and publis
 
 For interested contributors who are not familiar with these terms, the QGIS-documentation repo explains these steps in detail for people making their [first contribution](https://github.com/gitty-coder/QGIS-Documentation/blob/master/docs/documentation_guidelines/first_contribution.rst).
 
-## Build instructions
+## <a name="build">Build instructions</a>
 
 Since the source code uses the [svg](https://ctan.org/pkg/svg?lang=en) package, which in turn uses the inkscape CLI, all latex engines must be run with the `--shell-escape` argument. Our suggestion would be to use [latexmk](https://github.com/mgeier/homepage/blob/0fc88d83/latexmk.rst) to build the source file `book.tex`.
 
