@@ -1,7 +1,7 @@
 
 # A Guide to Nepal Physics Olympiad
 
-Release coming soon! For now, [build](#build) the source files.
+Get the pdf from the latest release in the [Releases](https://github.com/gitty-coder/physics-olympiad-book/releases) section.
 
 ## About the book
 
